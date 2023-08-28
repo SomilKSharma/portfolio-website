@@ -6,47 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Create the header -->
     <header>
-        <!-- create the section for logo -->
-        <section class="nav__logo">
-            <h1>LOGO</h1>
-        </section>
-        <!-- Create a section for the right of the header -->
-        <section class="nav__right">
-            <!-- cretae an unordered list -->
-            <ul>
-                <li><h3>Join Community</h3></li>
-                <li><h3>Contact Us</h3></li>
-            </ul>
-        </section>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">LOGO</a>
+        
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Join Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
     </header>
     <!-- create the main element -->
     <main>
+        <!-- hack your wealth journey -->
+        <section class="wealth__journey">
+            <div>
+                <h1>Hack your wealth journey inside the 1% club</h1>
+                <p>A super premium annual subscription that will transform
+                    your wealth planning and make you say
+                    “Bro! I’m financially sorted!”</p>
+                <button type="button" id="join" class="btn btn-outline-light btn-lg">Join the community</button>
+            </div>
+            <div>
+                <img src="" alt="fas" width="300px">
+            </div>
+        </section>
         <!-- Featured in section -->
         <section class="featured__in">
             <h3>Featured in...</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="" alt="top" width="200px">
         </section>
         <!-- section for about me -->
         <section class="about_me">
             <h3>About me</h3>
             <h2>Entrepreneur, content creator, Finance Influencer</h2>
             <!-- add an image -->
-            <img src="" alt="">
+            <img src="" id="profile" alt="pc" width="200px">
             <!-- text in p -->
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima labore ipsam ducimus similique, natus cum! Distinctio, laborum quia animi, officia fugit id atque fugiat iure voluptates, eligendi iste vel!20</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima labore ipsam ducimus similique, natus cum! Distinctio, laborum quia animi, officia fugit id atque fugiat iure voluptates, eligendi iste vel!20</p>
             <!-- Add favicons -->
-            <ul>
-                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
-                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
-                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
-                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
-                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
+            <ul class="social-icons">
+                <li><i class="fa-brands fa-instagram fa-2xl"></i>Insta</li>
+                <li><i class="fa-brands fa-instagram fa-2xl"></i>FB</li>
+                <li><i class="fa-brands fa-instagram fa-2xl"></i>LK</li>
+                <li><i class="fa-brands fa-instagram fa-2xl"></i>TW</li>
+                <li><i class="fa-brands fa-instagram fa-2xl"></i>SD</li>
             </ul>
         </section>
         <!-- get a services section -->
@@ -54,97 +75,249 @@
             <h3>services</h3>
             <h2>Start your journey towards financial freedom</h2>
             <!-- get an unordered list -->
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
+            <ul class="social-icons">
+                <li><button type="button" id="join" class="btn btn-primary ">Community</button></li>
+                <li><button type="button" id="join" class="btn btn-light ">Courses</button></li>
+                <li><button type="button" id="join" class="btn btn-light ">Consultation</button></li>
             </ul>
             <!-- article on community -->
             <article class="community">
+                <h1>The 1% Club</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolore sunt delectus voluptates eligendi at fuga suscipit fugit quibusdam deleniti, ipsum nesciunt voluptate pariatur omnis architecto magni, a nostrum eum!</p>
-                <button>Join the community</button>
-                <img src="" alt="">
+                <img src="" alt="pc" width="200px">
             </article>
             <!-- get an unordered list -->
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
+            <ul class="social-icons">
+                <li><button type="button" id="join" class="btn btn-light ">Community</button></li>
+                <li><button type="button" id="join" class="btn btn-primary ">Courses</button></li>
+                <li><button type="button" id="join" class="btn btn-light ">Consultation</button></li>
             </ul>
             <!-- article on porfile cards -->
             <article class="profile__cards">
-
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </article>
             <!-- get an unordered list -->
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
+            <ul class="social-icons">
+                <li><button type="button" id="join" class="btn btn-light ">Community</button></li>
+                <li><button type="button" id="join" class="btn btn-primary ">Courses</button></li>
+                <li><button type="button" id="join" class="btn btn-light ">Consultation</button></li>
             </ul>
             <article class="consultation_cards">
-
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
             </article>
         </section>
         <!-- section on testimonials -->
         <section class="testimonials">
-            <h3>What comunity members say about us</h3>
+            <h3>testimonials</h3>
             <h2>What community members say</h2>
             <!-- card section artcile -->
+            <section class="testimonial_cards_bg hidden">
+                <article class="consultation_cards">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
             <section class="testimonial_cards">
-
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
             </section>
         </section>
         <!-- section on media -->
         <section class="media">
             <h3>media section</h3>
             <h2>Check out the intro video of the community</h2>
-            <video src=""></video>
+            <video id="intro_video" src=""></video>
         </section>
+        <div class="blank"></div>
         <!-- section on the last page -->
         <section class="one__click">
-            <h3>get app in one click</h3>
+            <p>get app in one click</p>
             <h2>hack into your wealth</h2>
-            <button>Join the community</button>
-            <img src="" alt="">
+        </section>
+        <section class="join_the_community">
+            <img src="" id="phtoto_phone" alt="dst">
+            <button type="button" id="join" class="btn btn-light btn-lg">Join the community</button>
         </section>
     </main>
     <!-- get the footer -->
     <footer>
-        <!-- contact us section -->
-        <section class="contact__us">
-            <h3>Contact us</h3>
-            <h2>Have any queries, talk to us</h2>
-            <ul>
-                <li>Email us</li>
-                <li>Whatsapp</li>
-                <li>Sales/support</li>
-            </ul>
-        </section>
-        <!-- ending section -->
-        <section class="end">
-            <!-- get the logo -->
-            <h1>LOGO</h1>
-            <!-- social skills -->
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <!-- download app -->
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-            <!-- terms etc -->
-            <ul>
-                <li>© 2023 companyname. inc.</li>
-                <li>Privacy Policy</li>
-                <li>Terms of services</li>
-            </ul>
-        </section>
-    </footer>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+        
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Contact us
+                    </h6>
+                    <h1>
+                        Do you have any queries,
+                        feel free to reach out to us.
+                    </h1>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    </h6>
+                    <h3>
+                    <a href="#!" class="text-reset">Email Us</a>
+                    </h3>
+                    <h3>
+                    <a href="#!" class="text-reset">Available on Whatsapp</a>
+                    </h3>
+                    <h3>
+                    <a href="#!" class="text-reset">Sales&Support</a>
+                    </h3>
+                </div>
+                <!-- Grid column -->
+                <div id="logo_end" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h1 class="text-uppercase fw-bold mb-4">LOGO</h1>
+                    <ul class="social-icons">
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i>Insta</li>
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i>FB</li>
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i>LK</li>
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i>TW</li>
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i>SD</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="">www.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+    <script src="script.js"></script>
+    </body>
 </html>
