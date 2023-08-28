@@ -1,12 +1,14 @@
 :root {
     --primary-color: #5d74f7; /* Define the color variable */
     --secondary-color: rgba(156, 167, 231, 0.302);
-  }
-
-body {
-  background-color: var(--secondary-color);  
 }
 
+/* Global Styling */
+body {
+    background-color: var(--secondary-color);  
+}
+
+/* Navbar Styles */
 .navbar-brand {
     color: var(--primary-color);
     padding: 1rem;
@@ -19,12 +21,12 @@ body {
 
 #collapsibleNavbar {
     padding-right: 5rem;
-
 }
 
+/* Wealth Journey Section */
 .wealth__journey {
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 50vh;
     background-color: var(--primary-color);
     color: white;
@@ -32,31 +34,25 @@ body {
     gap: 2rem;
     justify-content: center;
     padding: 3rem;
-    box-sizing: border-box; /* Include padding in the height calculation */
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
-    .wealth__journey {
-        flex-direction: row;
-    }
-}
-
+/* Featured In Section */
 .featured__in {
     padding-top: 0;
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 30vh;
     align-items: center;
     justify-content: center;
     padding: 3rem;
 }
 
+/* About Me Section */
 .about_me {
     text-align: center;
-
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 70vh;
     padding: 1rem;
     align-items: center;
@@ -67,40 +63,41 @@ body {
 #profile {
     width: 200px;
     border: solid;
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image fills the circular container */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .social-icons {
-    list-style-type: none; /* Remove default list bullets */
+    list-style-type: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
 .social-icons li {
-    margin-right: 1rem; /* Adjust spacing between icons */
+    margin-right: 1rem;
 }
 
 .social-icons li:last-child {
-    margin-right: 0; /* Remove margin from the last icon */
+    margin-right: 0;
 }
 
 .social-icons i {
     display: inline-block;
     font-size: 2rem;
-    color: black; /* Set your desired color */
-    cursor: default; /* Remove pointer cursor */
+    color: black;
+    cursor: default;
 }
 
 #join {
     border-radius: 30px;
 }
 
+/* Services Section */
 .services {
     text-align: center;
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 350vh;
     padding: 1rem;
     gap: 1rem;
@@ -115,20 +112,7 @@ body {
     padding: 2rem;
 }
 
-@media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
-    .about_me {
-        height: 50vh;
-    }
-
-    .services {
-        height: 170vh;
-    }
-    .profile__cards {
-        flex-direction: row;
-    }
-}
-
+/* Consultation Cards Section */
 .consultation_cards {
     display: flex;
     flex-direction: column;
@@ -136,17 +120,11 @@ body {
     padding: 2rem;
 }
 
-@media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
-    .consultation_cards {
-        flex-direction: row;
-    }
-}
-
+/* Testimonials Section */
 .testimonials {
     text-align: center;
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 70vh;
     padding: 1rem;
     gap: 1rem;
@@ -154,10 +132,11 @@ body {
     justify-content: center;
 }
 
+/* Media Section */
 .media {
     text-align: center;
     display: flex;
-    flex-direction: column; /* Display as column by default */
+    flex-direction: column;
     height: 30vh;
     padding: 1rem;
     gap: 1rem;
@@ -170,29 +149,9 @@ body {
     width: fit-content;
 }
 
-@media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
-    .consultation_cards {
-        flex-direction: row;
-    }
-
-    .testimonials {
-        height: 50vh;
-    }
-
-    .media {
-        height: 50vh;
-    }
-
-    #intro_video {
-        width: 400px;
-        height: 500px;
-    }
-}
-
+/* Miscellaneous Sections */
 .blank {
     height: 10vh;
-
 }
 
 .one__click {
@@ -222,18 +181,6 @@ body {
     max-width: 100%;
 }
 
-@media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
-
-    .one__click {
-        border-radius: 70rem 70rem 0 0;
-    }
-
-    .photo_phone {
-        width: 300px;
-    }
-}
-
 #logo_end {
     background-color: var(--primary-color);
     color: white;
@@ -246,14 +193,47 @@ body {
     padding: 2rem;
 }
 
+/* Hidden Class */
 .hidden {
     display: none;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
-    /* Change back to row layout on larger screens */
+    .wealth__journey {
+        flex-direction: row;
+    }
 
-    #logo_end {
-        background-color: bg-light;
+    .about_me {
+        height: 50vh;
+    }
+
+    .services {
+        height: 170vh;
+    }
+    .profile__cards,
+    .consultation_cards {
+        flex-direction: row;
+    }
+
+    .testimonials {
+        height: 50vh;
+    }
+
+    .media {
+        height: 50vh;
+    }
+
+    #intro_video {
+        width: 400px;
+        height: 500px;
+    }
+
+    .one__click {
+        border-radius: 70rem 70rem 0 0;
+    }
+
+    .photo_phone {
+        width: 300px;
     }
 }
