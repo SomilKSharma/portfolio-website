@@ -1,2 +1,2 @@
-# bootstrap-website
-A website made out of HTML, CSS and Bootstrap.
+# SassBootstrapWebsite
+A website made out of Sass and Bootstrap, with javascript.
